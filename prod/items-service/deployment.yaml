@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: items-service
+  namespace: pisharped
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app:  items-service
+  template:
+    metadata:
+      labels:
+        app:  items-service
+    spec:
+      containers:
+      - name:  items-service
+        image: sanghvt/items-service:main-1
+        ports:
+        - containerPort: 5000
