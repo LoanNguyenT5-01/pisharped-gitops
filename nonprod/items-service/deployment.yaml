@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: items-service
-        image: sanghvt/items-service:develop-1
+        image: loannguyent5/items-service
         ports:
         - containerPort: 5000
