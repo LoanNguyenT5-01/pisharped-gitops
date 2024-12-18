@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orders-service
-  namespace: pisharped
 spec:
   replicas: 1
   selector:
@@ -15,6 +14,6 @@ spec:
     spec:
       containers:
       - name: orders-service
-        image: loannguyent5/orders-service:develop-3
+        image: sanghvt/orders-service:develop-3
         ports:
         - containerPort: 5000
