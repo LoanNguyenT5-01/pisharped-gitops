@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name:  orders-service
-        image: loannguyent5/orders-service:main-24
+        image: loannguyent5/orders-service:main-29
         ports:
         - containerPort: 5000
 
